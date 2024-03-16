@@ -1,39 +1,195 @@
-body {
+body{
+    margin: 0;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    font-family: "roboto", sans-serif;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 48px;
+    padding: 8px 96px;
+    margin: 0;
+    flex: 1;
+}
+
+/* Font related stylings. */
+.hero,
+.footer{
+    background-color: #1F2937;
+}
+
+.main,
+.logo{
+    color: #F9FAF8;
+}
+
+.main{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.secondary,
+.links a,
+.footer{
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+/* Format and remove underline from links. */
+.links{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
     justify-content: space-between;
 }
 
-.header {
-    background-color: #1F2937;
-    margin: 0;
+.logo{
+    font-size: 24px;
+}
+
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+    padding: 48px 0;
+}
+
+#hollywood{
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+
+.subleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    align-self: flex-start;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+/* First section with illustrations and info. */
+.content.one{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 96px;
+    flex: 1;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info-header{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
+
+.info.text{
+    text-align: center;
+    width: 150px;
+}
+
+img{
+    width: 150px;
+    border-radius: 8px;
+    border: 2px solid #3882F6;
+}
+
+/* Second section with quote/testimonial. */
+
+.content.two{
+    background-color: #E5E7EB;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 96px;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author{
+    text-align: end;
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+
+
+/* Last section with a call to action and a sign up button. */
+.content.three{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 98px;
+}
+
+.call-text{
+    background-color: #3882F6;
+    border-radius: 8px;
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px;
 }
 
-.header-title {
-    font-size: 24px;
-    color: #F9FAF8;
-    padding: 0 32px;
+.call-text div,
+.call-text button{
+    color: white;
 }
 
-.links {
-    padding: 0 32px;
-}
-
-.links a{
+.call.sub{
     font-size: 18px;
-    color: #E5E7EB;
-    text-decoration: none;
-    padding: 0 8px;
+    color:#E5E7EB;
 }
 
-.content-1 {
-    background-color: #1F2937;
+.call-text .signup{
+    border: 2px solid white;
+    justify-self: center;
+    align-self: center;
 }
 
-img {
-    width: 200px;
-    height: auto;
+
+
+/* Footer section with copyright information. */
+.footer{
+    flex: 1;
+    padding: 16px;
+    text-align: center;
 }
+
